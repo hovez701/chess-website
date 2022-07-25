@@ -1,0 +1,766 @@
+/* || SITEWIDE */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family:  system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+
+}
+
+
+
+/* || Header and Main Navigation */
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    justify-items: center;
+    background-color: rgba(8, 8, 8, 0.8);
+    height: 10vh;
+    color: white;
+    padding: 40px 60px;
+    position: absolute;
+    width: 100%;
+}
+
+.logo i{
+    font-size: 2rem;
+    border: 2px solid white;
+    padding: 10px;
+    margin: 5px;
+}
+
+.logo-text{
+    font-size: 2rem;
+}
+
+.navbar{
+    display:inline-block;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 10px;
+}
+.navbar li{
+    list-style: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+
+}
+
+.navbar li:hover{
+    background-color: lightgrey;
+}
+
+/* || General styles */
+.hero{
+    height: 100vh;
+    width: 100%;
+    background-image: url('../images/hassan-pasha-nEbMedmVwgw-unsplash.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 60px;
+}
+
+.hero h1{
+    color: white;
+    font-size: 6rem;
+    padding-top: 15vh;
+    text-shadow: 1px 1px black;
+}
+
+.membership{
+    height: 100vh;
+    width: 100%;
+}
+
+.lessons{
+    height: 100vh;
+    width: 100%;
+    background-image: url('../images/jani-kaasinen-7VGzV09YnvA-unsplash.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
+}
+
+.testimonials{
+    height: 100vh;
+    width: 100%;
+    background-image: url('../images/micael-saez-fzM9jFtf5g4-unsplash.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
+}
+
+.primary-btn{
+    font-size: 1rem;
+    background-color: #FFD987;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 600;
+    margin-top: 3vh;
+}
+
+.primary-btn:hover{
+    background-color: #e2a92c;
+    cursor: pointer;
+}
+
+.primary-btn{
+    animation-delay: 0.6s;
+}
+
+.container-center{
+    padding: 20px 100px;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+}
+
+.grid-3{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.grid-box{
+    padding: 40px;
+    height: 50vh;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    opacity: 0;
+}
+
+.show{
+    opacity: 1;
+}
+
+#grid-1{
+    animation-delay: 0s;
+}
+#grid-2{
+    animation-delay: 0.3s;
+}
+#grid-3{
+    animation-delay: 0.6s;
+}
+
+.black{
+    background-color: black;
+    color: white;
+}
+
+.content-heading{
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.container-side{
+    background-color: white;
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 30px 0px black;
+    opacity: 0;
+}
+
+.container-side .primary-btn{
+    margin: 10px auto;
+}
+
+.review {
+    height: 25vh;
+    width: 30vw;
+}
+.review-text{
+    font-size: 1.3rem;
+    text-align: center;
+    font-style: italic;
+    padding-bottom: 10px;
+}
+.review-author{
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.carousel-buttons{
+    margin: 10px auto;
+    text-align: center;
+}
+
+.carousel-btn{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: darkgrey;
+    text-align: center;
+    
+}
+
+.carousel-btn:hover{
+    cursor: pointer;
+}
+
+.membership{
+    position: relative;
+}
+.main-heading{
+    font-size: 3rem;
+}
+.membership-content{
+
+    position: absolute;
+    top: 50%;
+    Left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.membership-heading{
+    transition: all 2s ease-in-out;
+    font-size: 1rem;
+}
+
+.icons{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    text-align: center;
+    padding: 30px;
+}
+
+.icons i{
+    padding: 0px 30px;
+    text-align: center;
+    font-size: 8rem;
+    padding: 30px;
+    opacity: 0;
+    
+}
+
+.icons i:hover{
+    color:rgb(65, 64, 64);
+    cursor: pointer;
+}
+
+i:nth-child(2){
+    animation-delay: 0.3s;
+}
+i:nth-child(3){
+    animation-delay: 0.6s;
+}
+
+.box{
+    background-color: black;
+    color: white;
+    padding: 60px;
+    height: 50vh;
+    max-width: 30vw;
+}
+
+.price{
+    text-align: center;
+    font-size: 2rem;
+    padding: 0px 30px 30px 30px;
+}
+
+/*Utilities*/
+.big{
+    font-size: 1.5rem;
+}
+
+.active {
+    background-color: rgb(65, 64, 64);
+}
+
+.hidden{
+    display: none;
+}
+
+/*Footer*/
+footer{
+    background-color: black;
+    height: 10vh;
+    width: 100%;
+    color: white;
+    padding: 30px 50px;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+}
+
+footer div{
+    grid-column: 1/7;
+}
+
+footer .footer-text{
+    grid-column: 8/auto;
+}
+
+
+footer i{
+    color: red;
+}
+
+/*Responsiveness*/
+.line {
+    width: 35px;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.7);
+    padding-bottom: 7px;
+}
+.responsive-menu{
+    padding: 40px;
+    display: none;
+
+}
+
+/*Tablets*/
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    .responsive-menu{
+        display: inline-block;
+        position: absolute;
+        right: 0;
+        z-index: 3;
+        cursor: pointer;
+    }
+
+    .primary-btn{
+        font-size: 16px;
+        background-color: #FFD987;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-weight: 600;
+        margin-top: 1vh;
+    }
+
+    .navbar{
+        display: none;
+    }
+
+    .navbar ul{
+        background-color: rgba(8, 8, 8, 0.9);
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navbar a{
+        font-size: 3rem;
+
+    }
+
+
+    .hero h1{
+        font-size: 3rem;
+    }
+
+    .grid-3{
+        grid-template-columns: 1fr;
+    }
+
+
+    .grid-box{
+        padding: 20px;
+        font-size: 1rem;
+        height: 30vh;
+
+    }
+
+    .container-center{
+        padding: 20px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        width: 60vw;
+    }
+
+    .container-side{
+        background-color: white;
+        position: absolute;
+        top:20%;
+        left: 20%;
+        max-width: 60vw;
+        max-height: 40vh;
+        text-align: center;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0px 0px 30px 0px black;
+        opacity: 0;
+    }
+
+    .review {
+        width: 60vw;
+        height: 20vh;
+        padding: 20px;
+    }
+    .review-text{
+        font-size: 1rem;
+        text-align: center;
+        font-style: italic;
+        padding-bottom: 10px;
+    }
+    .review-author{
+        font-size: 1rem;
+        text-align: center;
+        padding-bottom: 10px;
+
+    }
+    .carousel-buttons{
+        margin: 0px auto;
+        text-align: center;
+    }
+    
+    .carousel-btn{
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: darkgrey;
+        text-align: center;
+        
+    }
+    
+    .carousel-btn:hover{
+        cursor: pointer;
+    }
+    
+    .membership{
+        position: relative;
+    }
+    .main-heading{
+        font-size: 2rem;
+        text-align: center;
+    }
+    .membership-content{
+        position: absolute;
+        top: 50%;
+        Left: 50%;
+        width: 100%;
+        height: 100%;   
+        transform: translate(-50%,-50%);
+    }
+    
+    .membership-heading{
+        transition: all 2s ease-in-out;
+        font-size: 1rem;
+    }
+
+    .icons{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        text-align: center;
+        gap: 32px;
+        width: 70vw;
+    }
+    
+    .icons i{
+        padding: 0px 30px;
+        text-align: center;
+        font-size: 3rem;
+        padding: 20px;
+        opacity: 0;
+        
+    }
+    
+    .icons i:hover{
+        color:rgb(65, 64, 64);
+        cursor: pointer;
+    }
+    
+    i:nth-child(2){
+        animation-delay: 0.3s;
+    }
+    i:nth-child(3){
+        animation-delay: 0.6s;
+    }
+
+    
+    
+    .box{
+        background-color: black;
+        color: white;
+        padding: 30px;
+        height: 40vh;
+        max-width: 50vw;
+        margin: 0 auto;
+    }
+    
+    .price{
+        text-align: center;
+        font-size: 2rem;
+        padding: 0px 30px 30px 30px;
+    }
+
+    /*Footer*/
+    footer{
+        background-color: black;
+        height: 15vh;
+        width: 100%;
+        color: white;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    footer i{
+        color: red;
+    }
+}
+
+/*Smartphones*/
+@media screen and (max-width: 767px){
+    .logo-text{
+        display: none;
+    }
+
+    .primary-btn{
+        font-size: 1rem;
+        background-color: #FFD987;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-weight: 600;
+        margin-top: 10px;
+    }
+
+    .responsive-menu{
+        display: inline-block;
+        position: absolute;
+        right: 0;
+        z-index: 3;
+        cursor: pointer;
+    }
+
+    .navbar{
+        display: none;
+    }
+
+    .navbar ul{
+        background-color: rgba(8, 8, 8, 0.9);
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        /* height: 100vh; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navbar a{
+        font-size: 2rem;
+
+    }
+
+    .hero h1{
+        font-size: 3rem;
+    }
+
+    .grid-3{
+        grid-template-columns: 1fr;
+    }
+
+    .lessons{
+        height: 200vh;
+    }
+
+    .grid-box{
+        padding: 20px;
+        font-size: 1rem;
+        
+    }
+
+    .grid-box button{
+        font-size: 1rem;
+    }
+
+    .container-center{
+        padding: 20px;
+    }
+
+    .container-side{
+        background-color: white;
+        top:10%;
+        left: 5%;
+        width: 90vw;
+        height: 70vh;
+        text-align: center;
+        transform: translateX(-50%);
+        gap: 0px;
+        box-shadow: 0px 0px 30px 0px black;
+        opacity: 0;
+        padding: 20px;
+
+    }
+
+    .review {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .review-text{
+        
+        font-size: 1rem;
+        text-align: center;
+        font-style: italic;
+        padding: 20px;
+        margin: 0;
+    }
+    .review-author{
+        font-size: 1rem;
+        text-align: center;
+        padding-bottom: 10px;
+
+    }
+    .carousel-buttons{
+        margin: 0px auto;
+        text-align: center;
+    }
+    
+    .carousel-btn{
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: darkgrey;
+        text-align: center;
+        
+    }
+    
+    .carousel-btn:hover{
+        cursor: pointer;
+    }
+    
+    .membership{
+        position: relative;
+    }
+    .main-heading{
+        font-size: 1rem;
+        text-align: center;
+    }
+    .membership-content{
+        position: relative;
+        width: 100%;
+        height: 100%;   
+    }
+    
+    .membership-heading{
+        transition: all 2s ease-in-out;
+        font-size: 1rem;
+    }
+
+    .icons{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        text-align: center;
+        gap: 10px;
+        width: 95vw;
+    }
+    
+    .icons i{
+        padding: 0px 10px;
+        text-align: center;
+        font-size: 2rem;
+        padding: 10px;
+        opacity: 0;
+        
+    }
+
+    .icons i:hover{
+        color:rgb(65, 64, 64);
+        cursor: pointer;
+    }
+    
+    i:nth-child(2){
+        animation-delay: 0.3s;
+    }
+    i:nth-child(3){
+        animation-delay: 0.6s;
+    }
+
+    
+    
+    .box{
+        background-color: black;
+        color: white;
+        padding: 30px;
+        max-width: 80vw;
+        margin: 0 auto;
+        font-size: 0.8rem;
+    }
+    
+    .price{
+        text-align: center;
+        font-size: 2rem;
+        padding: 0px 30px 30px 30px;
+    }
+
+
+    /*Footer*/
+    footer{
+        background-color: black;
+        height: 50px;
+        width: 100%;
+        color: white;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .policy{
+        display: none;
+    }
+
+    footer i{
+        color: red;
+    }
+
+}
+
