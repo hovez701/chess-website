@@ -18,6 +18,7 @@
         />
     </head>
     <body>
+
         <header class="header">
             <div class="logo"><i class="fa fa-chess-king"></i>
                 <span class="logo-text">SquareKing Tutoring</span>
@@ -28,10 +29,10 @@
                 <div class="line line-3"></div>
             </div>
             <nav class="navbar">
-                <ul>
-                    <li><a href="#lessons">Gain an advantage</a></li>
-                    <li><a href="#testimonials">Our students</a></li>
-                    <li><a href="#membership">Membership</a></li>
+                <ul class="nav__links">
+                    <li><a class="nav__link" href="#lessons">Gain an advantage</a></li>
+                    <li><a class="nav__link" href="#testimonials">Our students</a></li>
+                    <li><a class="nav__link" href="#membership">Membership</a></li>
                 </ul>
             </nav>
             
@@ -82,10 +83,10 @@
                     <div class="review-author">- Grayson (2543)</div>
                 </div>
                 <div class="carousel-buttons">
-                    <div class="carousel-btn active"></div>
-                    <div class="carousel-btn"></div>
-                    <div class="carousel-btn"></div>
-                    <div class="carousel-btn"></div>
+                    <div class="carousel-btn active" data-review="0"></div>
+                    <div class="carousel-btn" data-review="1"></div>
+                    <div class="carousel-btn" data-review="2"></div>
+                    <div class="carousel-btn" data-review="3"></div>
                 </div>
                 <button class="primary-btn">Book now</button>
             </div>
@@ -94,9 +95,9 @@
             <div class="membership-content">
                 <h1 class="main-heading">Choose your membership plan</h1>
                 <div class="icons">
-                    <i class="fa fa-chess-pawn big animate__animated"></i>
-                    <i class="fa fa-chess-knight animate__animated"></i>
-                    <i class="fa fa-chess-king animate__animated"></i>
+                    <i class="fa fa-chess-pawn big animate__animated" data-box="0"></i>
+                    <i class="fa fa-chess-knight animate__animated" data-box="1"></i>
+                    <i class="fa fa-chess-king animate__animated" data-box="2"></i>
                     <div class="membership-name big">Beginner</div>
                     <div class="membership-name">Improver</div>
                     <div class="membership-name">Professional</div>
